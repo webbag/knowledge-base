@@ -12,3 +12,4 @@ Skanowanie portów
 nmap -p 0-65536 172.18.0.1
 ```
 
+sudo netstat -lnp | grep redis
