@@ -19,3 +19,11 @@ scp plik_lokalny uzytkownik@serwer.pl:/sciezka/plik_serwer
 sudo lsof -nP -i | grep LISTEN
 
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
+
+
+
+Checking Debian Version from the Command Line
+The lsb_release utility displays LSB (Linux Standard Base) information about the Linux distribution.
+```
+lsb_release -a
+```    
