@@ -1,10 +1,10 @@
 ssh-copy-id username@host
 ssh-keygen
 
-sudo useradd -m packagist -s /bin/bash
-passwd packagist
+sudo useradd -m firstname.lastname -s /bin/bash
+passwd firstname.lastname
 
-sudo usermod -aG sudo packagist
+sudo usermod -aG sudo firstname.lastname
 
 sudo openvpn --config firstname.lastname.ovpn
 
