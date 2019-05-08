@@ -35,6 +35,7 @@ Be sure you don't have files uncommitted, if not commit them before next step.
 
 `git log -M summary`
 
+`git tag -a v2.0.0 -m "vv2.0.0"`
 `git push bitbucket --tags`
 `git fetch`
 `git tag`

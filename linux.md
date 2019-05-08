@@ -1,8 +1,8 @@
 ssh-copy-id username@host
 ssh-keygen
 
-sudo useradd -m firstname.lastname -s /bin/bash
-passwd firstname.lastname
+sudo useradd -m gitlab.devggp -s /bin/bash
+passwd gitlab.devggp
 
 sudo usermod -aG sudo firstname.lastname
 
@@ -10,7 +10,7 @@ sudo openvpn --config firstname.lastname.ovpn
 
 
 Testing that everything is set up correctly
-ssh -T git@gitlab.com
+ssh -T git@aaaaaaaaaa.com
 
 scp -r uzytkownik@serwer.pl:/scieżka/plik_serwer plik_lokalny
 scp -P 1234 user@host:/path_file_name path/
