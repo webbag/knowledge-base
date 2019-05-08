@@ -1,8 +1,8 @@
 ssh-copy-id username@host
 ssh-keygen
 
-sudo useradd -m gitlab.aaaa -s /bin/bash
-passwd gitlab.devggp
+sudo useradd -m gitlab.aaaaaaaa -s /bin/bash
+passwd gitlab.aaaaaaaaa
 
 sudo usermod -aG sudo firstname.lastname
 
