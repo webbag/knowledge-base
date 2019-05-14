@@ -14,7 +14,7 @@ ssh -T git@aaaaaaaaaa.com
 
 scp -r uzytkownik@serwer.pl:/scieżka/plik_serwer plik_lokalny
 scp -P 1234 user@host:/path_file_name path/
-scp plik_lokalny uzytkownik@serwer.pl:/sciezka/plik_serwer
+scp -r -P 1234 katalog_lokalny uzytkownik@serwer.pl:/sciezka/plik_serwer
 
 
 sudo lsof -nP -i | grep LISTEN
@@ -40,3 +40,8 @@ bzip2 -d path_file_name.bz2
 
 
 https://www.flynerd.pl/2018/06/20-polecen-terminala-unix-podstawowe-komendy-linux-ktore-trzeba-znac.html#locate
+
+
+tar cvzf targetfile.tar.gz sourcedirectory
+
+find dist/ -type d -print0 | xargs -0 chmod 755
