@@ -44,4 +44,6 @@ https://www.flynerd.pl/2018/06/20-polecen-terminala-unix-podstawowe-komendy-linu
 
 tar cvzf targetfile.tar.gz sourcedirectory
 
+tar -zcvf directory.tar.gz directory/
+
 find dist/ -type d -print0 | xargs -0 chmod 755
