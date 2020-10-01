@@ -1,8 +1,8 @@
-# MySQL
+# MySQL Server
 
 sudo mysql
 
-SELECT user,authentication_string,plugin,host FROM mysql.user;
+SELECT user,authentication_string,plugin,host FROM mysql.user ORDER BY user ASC;
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
