@@ -1,5 +1,3 @@
-Poniżej przedstawiam uporządkowane dane:
-
 1. Generowanie klucza SSH: `ssh-keygen`
 2. Kopiowanie klucza SSH na zdalny serwer: `ssh-copy-id username@host`
 3. Dodanie nowego użytkownika w systemie: `sudo useradd -m gitlab.aaaaaaaa -s /bin/bash` 
