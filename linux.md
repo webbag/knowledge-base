@@ -1,3 +1,22 @@
+Użytkownicy:
+
+useradd - tworzy nowego użytkownika
+userdel - usuwa użytkownika
+usermod - modyfikuje ustawienia użytkownika, np. dodaje go do grupy
+passwd - ustawia hasło dla użytkownika
+su - zmiana użytkownika (do innej sesji)
+sudo - wykonanie polecenia jako inny użytkownik (zwykle administrator)
+Grupy:
+
+groupadd - tworzy nową grupę
+groupdel - usuwa grupę
+groupmod - modyfikuje ustawienia grupy, np. zmienia jej nazwę
+gpasswd - zarządza hasłem grupy, umożliwiając dostęp do niej tylko osobom, które znają hasło
+newgrp - zmiana grupy bieżącego użytkownika (do tej samej sesji)
+
+
+
+
 1. Generowanie klucza SSH: `ssh-keygen`
 2. Kopiowanie klucza SSH na zdalny serwer: `ssh-copy-id username@host`
 3. Dodanie nowego użytkownika w systemie: `sudo useradd -m gitlab.aaaaaaaa -s /bin/bash` 
