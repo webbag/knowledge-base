@@ -1,53 +1,20 @@
-ssh-copy-id username@host
-ssh-keygen
+Poniżej przedstawiam uporządkowane dane:
 
-sudo useradd -m gitlab.aaaaaaaa -s /bin/bash
-passwd gitlab.aaaaaaaaa
-
-sudo usermod -aG sudo firstname.lastname
-
-sudo openvpn --config firstname.lastname.ovpn
-
-
-Testing that everything is set up correctly
-ssh -T git@aaaaaaaaaa.com
-
-scp -r uzytkownik@serwer.pl:/scieżka/plik_serwer plik_lokalny
-scp -P 1234 user@host:/path_file_name path/
-scp -r -P 1234 katalog_lokalny uzytkownik@serwer.pl:/sciezka/plik_serwer
-
-
-sudo lsof -nP -i | grep LISTEN
-
-https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
-
-Checking Debian Version from the Command Line
-The lsb_release utility displays LSB (Linux Standard Base) information about the Linux distribution.
-
-```
-lsb_release -a
-```
-
-​rsync --progress --delete -ax
-
-rsync --progress -av --delete \
-   --exclude /path \
-   /path \
-   -e 'ssh -p 1234' /local_path \
-    user@host:/remote_path
-
-bzip2 -d path_file_name.bz2 
-
-
-https://www.flynerd.pl/2018/06/20-polecen-terminala-unix-podstawowe-komendy-linux-ktore-trzeba-znac.html#locate
-
-
-tar cvzf targetfile.tar.gz sourcedirectory
-
-Pack
-tar -zcvf directory.tar.gz directory/
-Unpack
-tar -xzf directory.tar.gz 
-
-
-find dist/ -type d -print0 | xargs -0 chmod 755
+1. Generowanie klucza SSH: `ssh-keygen`
+2. Kopiowanie klucza SSH na zdalny serwer: `ssh-copy-id username@host`
+3. Dodanie nowego użytkownika w systemie: `sudo useradd -m gitlab.aaaaaaaa -s /bin/bash` 
+4. Ustawienie hasła dla nowego użytkownika: `passwd gitlab.aaaaaaaaa`
+5. Dodanie użytkownika do grupy sudo: `sudo usermod -aG sudo firstname.lastname`
+6. Uruchomienie OpenVPN z podaną konfiguracją: `sudo openvpn --config firstname.lastname.ovpn`
+7. Testowanie połączenia SSH: `Testing that everything is set up correctly ssh -T git@aaaaaaaaaa.com`
+8. Pobieranie pliku ze zdalnego serwera: `scp user@host:/path_file_name path/` lub `scp -r uzytkownik@serwer.pl:/scieżka/plik_serwer plik_lokalny`
+9. Wysyłanie pliku na zdalny serwer: `scp -r -P 1234 katalog_lokalny uzytkownik@serwer.pl:/sciezka/plik_serwer`
+10. Wyświetlanie informacji o otwartych portach sieciowych: `sudo lsof -nP -i | grep LISTEN`
+11. Instalacja MySQL na Ubuntu 18.04: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
+12. Sprawdzanie wersji Debian z poziomu linii komend: `lsb_release -a`
+13. Synchronizacja plików między serwerami: `rsync --progress -av --delete --exclude /path /path -e 'ssh -p 1234' /local_path user@host:/remote_path`
+14. Rozpakowywanie pliku skompresowanego formatem Bzip2: `bzip2 -d path_file_name.bz2`
+15. Wyszukiwanie plików na systemie: https://www.flynerd.pl/2018/06/20-polecen-terminala-unix-podstawowe-komendy-linux-ktore-trzeba-znac.html#locate
+16. Tworzenie pliku tar z archiwum gzip: `tar cvzf targetfile.tar.gz sourcedirectory`
+17. Rozpakowywanie pliku tar: `tar -xzf directory.tar.gz`
+18. Zmiana uprawnień dla katalogów: `find dist/ -type d -print0 | xargs -0 chmod 755`
