@@ -1,18 +1,19 @@
 Użytkownicy:
 
-useradd - tworzy nowego użytkownika
-userdel - usuwa użytkownika
-usermod - modyfikuje ustawienia użytkownika, np. dodaje go do grupy
-passwd - ustawia hasło dla użytkownika
-su - zmiana użytkownika (do innej sesji)
-sudo - wykonanie polecenia jako inny użytkownik (zwykle administrator)
+1. useradd - tworzy nowego użytkownika
+2. userdel - usuwa użytkownika
+3. usermod - modyfikuje ustawienia użytkownika, np. dodaje go do grupy
+4. passwd - ustawia hasło dla użytkownika
+5. su - zmiana użytkownika (do innej sesji)
+6. sudo - wykonanie polecenia jako inny użytkownik (zwykle administrator)
+
 Grupy:
 
-groupadd - tworzy nową grupę
-groupdel - usuwa grupę
-groupmod - modyfikuje ustawienia grupy, np. zmienia jej nazwę
-gpasswd - zarządza hasłem grupy, umożliwiając dostęp do niej tylko osobom, które znają hasło
-newgrp - zmiana grupy bieżącego użytkownika (do tej samej sesji)
+7. groupadd - tworzy nową grupę
+8. groupdel - usuwa grupę
+9. groupmod - modyfikuje ustawienia grupy, np. zmienia jej nazwę
+10. gpasswd - zarządza hasłem grupy, umożliwiając dostęp do niej tylko osobom, które znają hasło
+11. newgrp - zmiana grupy bieżącego użytkownika (do tej samej sesji)
 
 
 
