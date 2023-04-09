@@ -24,3 +24,6 @@ sudo netstat -lnp | grep redis
 - **nslookup** - podobne do dig, ale bardziej podstawowe.
 - **tcpdump** - narzędzie do przechwytywania i wyświetlania pakietów sieciowych w czasie rzeczywistym.
 - **wireshark** - bardziej zaawansowane narzędzie do przechwytywania i analizowania pakietów sieciowych.
+
+
+
