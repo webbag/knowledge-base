@@ -14,10 +14,6 @@ nmap -p 0-65536 172.18.0.1
 
 sudo netstat -lnp | grep redis
 
-## Narzędzia sieciowe w RHEL
-
-W RHEL (Red Hat Enterprise Linux) istnieje wiele narzędzi służących do zarządzania sieciami i diagnozowania problemów z nimi związanymi. Niektóre z najważniejszych narzędzi to:
-
 - **ifconfig** - narzędzie do konfigurowania i wyświetlania informacji o interfejsach sieciowych.
 - **ip** - bardziej zaawansowane narzędzie do konfigurowania i wyświetlania informacji o interfejsach sieciowych.
 - **netstat** - narzędzie do wyświetlania informacji o połączeniach sieciowych, gniazdach i statystykach sieciowych.
@@ -28,5 +24,3 @@ W RHEL (Red Hat Enterprise Linux) istnieje wiele narzędzi służących do zarz�
 - **nslookup** - podobne do dig, ale bardziej podstawowe.
 - **tcpdump** - narzędzie do przechwytywania i wyświetlania pakietów sieciowych w czasie rzeczywistym.
 - **wireshark** - bardziej zaawansowane narzędzie do przechwytywania i analizowania pakietów sieciowych.
-
-Te narzędzia są bardzo przydatne dla administratorów sieci i mogą pomóc w rozwiązywaniu problemów z siecią.
